@@ -1,0 +1,3 @@
+product_name,regular_price,sale_price,category_id,subcategory_id,product_image,description,status,barcode,upload_date_time,manufacture_id,flag
+hgfdha,23,45,1,1,image1,ghyv,active,123,03/06/18 09:45 AM,1,manufacture_id
+hgfdha,23,45,1,1,image1,ghyv,active,123,03/06/18 09:45 AM,,
