@@ -158,10 +158,10 @@ class UserList extends React.Component{
                                 <TableRow>
                                     <TableCell>{user.name}</TableCell>
                                     <TableCell>{user.email}</TableCell>
-                                    <TableCell><Button onClick={() => this.props.deleteUser(user.id)} className="btn btn-danger">
+                                    <TableCell><Button onClick={() => this.props.deleteUser(user.id)} className="btn">
                                         Remove
                                     </Button></TableCell>
-                                    <TableCell><Button className="btn btn-danger" onClick={()=>{this.getData(user)}}>
+                                    <TableCell><Button className="btn btn-success" onClick={()=>{this.getData(user)}}>
                                         Edit
                                     </Button></TableCell>
                                 </TableRow>

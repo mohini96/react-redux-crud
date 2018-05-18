@@ -14,12 +14,9 @@ class Search extends React.Component {
 
     }
     handleSearch=(e)=>{
-
       console.log(e.target.name);
         const {users}=this.props;
         console.log("users",users);
-
-
     }
 
 

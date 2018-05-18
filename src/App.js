@@ -48,8 +48,6 @@ class App extends Component {
                     <Switch>
                         <PublicRoute path={'/login'} component={Login} />
                         <PublicRoute path={'/register'} component={Register} />
-
-
                         <PrivateRoute path={'/userlist'} component={UserList} />
                         <PrivateRoute path={'/gallary'} component={Gallary} />
                         <PrivateRoute path={'/about'} component={About} />

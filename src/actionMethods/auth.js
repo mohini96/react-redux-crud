@@ -10,7 +10,7 @@ export const loginmethod=(payload)=> {
             return data.message;
         }).catch((err)=>{
             console.log("login err====>",err);
-        })
+        });
     });
 }
 

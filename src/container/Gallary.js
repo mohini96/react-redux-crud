@@ -16,7 +16,6 @@ class Gallary extends React.Component{
     }
     onFormSubmit=(e)=>{
         e.preventDefault() // Stop form submit
-        debugger;
         this.props.fileUpload(this.state.file).then((response)=>{
             alert("inserted");
             // if(response.data['message']){
@@ -42,15 +41,12 @@ class Gallary extends React.Component{
     {
         if(this.props.users.length === 0)
         {
-            debugger;
             this.props.fetchImage();
         }
 
     }
     render() {
         const {users}=this.props;
-        debugger;
-        console.log("users",users);
         return (
 
             <div>
@@ -62,8 +58,6 @@ class Gallary extends React.Component{
                 <div>
                     {
                         Object.keys(users).map((key,index)=>{
-                            console.log("data",users.data[index]);
-                            console.log("Index",users.data);
                             return(
                                 <div className="gallery zoom">
                                     <a target="_blank" href={'http://localhost:3005/'+users.data[index]['image']}>

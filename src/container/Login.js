@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'material-ui/Button';
 import TextField from "material-ui/TextField";
 import {loginmethod} from './../actionMethods/auth';
-import {fetchGmail} from './../actionMethods/user'
+import {fetchGmail} from './../actionMethods/user';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
@@ -19,7 +19,6 @@ import {connect} from 'react-redux';
        this.setState({credentials});
      };
      logingmail=()=>{
-         debugger;
          this.props.fetchGmail();
      }
      loginHandler=()=>{

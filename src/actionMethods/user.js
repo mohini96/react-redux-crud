@@ -13,7 +13,6 @@ export const fetchUser=()=> {
     });
 }
 export const fetchGmail=()=> {
-    debugger;
     return (dispatch => {
         return axios.get('http://192.168.200.159:3005/auth/google').then(({data}) => {
             console.log(data)
