@@ -25,9 +25,7 @@ class UserList extends React.Component{
             searchArr:[]
         };
     }
-
     onModal = () => {
-
         if(this.state.open)
         {
             this.setState({

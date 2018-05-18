@@ -34,7 +34,7 @@ import {connect} from 'react-redux';
            }
 
        }).catch((err)=>{
-           console.log("error in login",err)
+           console.log("error in login",err);
        })
 
      };

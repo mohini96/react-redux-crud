@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {} from 'react-bootstrap'
 import {bindActionCreators} from 'redux';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Button from 'material-ui/Button';
 import {Switch,Route,Redirect,withRouter} from 'react-router-dom';
 import Login from './container/Login';

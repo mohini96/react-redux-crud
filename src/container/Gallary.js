@@ -49,6 +49,8 @@ class Gallary extends React.Component{
     }
     render() {
         const {users}=this.props;
+        debugger;
+        console.log("users",users);
         return (
 
             <div>
@@ -58,21 +60,23 @@ class Gallary extends React.Component{
                 <Button type="submit">Upload</Button>
             </form>
                 <div>
-                    {/*{*/}
-                        {/*users.map((user)=>{*/}
-                            {/*return(*/}
-                                {/*<div class="gallery zoom">*/}
-                                    {/*<a target="_blank" href={'http://localhost:3005/'+user.image}>*/}
-                                        {/*<img height={300} width={300} alt={'img'}*/}
-                                             {/*src={'http://localhost:3005/'+user.image}/>*/}
-                                    {/*</a>*/}
+                    {
+                        Object.keys(users).map((key,index)=>{
+                            console.log("data",users.data[index]);
+                            console.log("Index",users.data);
+                            return(
+                                <div className="gallery zoom">
+                                    <a target="_blank" href={'http://localhost:3005/'+users.data[index]['image']}>
+                                        <img height={300} width={300} alt={'img'}
+                                             src={'http://localhost:3005/'+users.data[index]['image']}/>
+                                    </a>
 
-                                    {/*<div class="desc">description</div>*/}
-                                {/*</div>*/}
+                                    <div className="desc">description</div>
+                                </div>
 
-                            {/*)*/}
-                        {/*})*/}
-                    {/*}*/}
+                            )
+                        })
+                    }
                 </div>
             </div>
 
